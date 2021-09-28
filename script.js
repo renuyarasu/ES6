@@ -1,11 +1,10 @@
 console.clear();
 
-/* let test = {
-    name: 'test',
-    num: 22,
-    istrue: true,
-} */
+/* 
+const name = 'Renu';
+const age = 35; */
+function person (name, age){
+    return `Hello ${name} ${age}`
+}
 
-const test = 22;
-const atest = 30;
-console.log(atest);
+console.log(person('Renu', 33));
