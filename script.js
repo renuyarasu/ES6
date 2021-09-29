@@ -1,14 +1,13 @@
 console.clear();
 
-const name = 'Renu';
-const age = 33;
+// rgba
+let red = 100;
+let green = 100;
+let blue = 100;
+let alpha = 0.8;
 
-// const fullname = `Name: ${name} Age: ${age}`;
+/* let rgbaExp = 'rgba(' + red + ', ' + green + ', ' + green + ', ' + alpha + ')'
+console.log(rgbaExp); */
 
-/* const fullname = (name, age) => {
-    return `Name: ${name} Age: ${age}`
-}
- */
-const fullname = (name, age) => `Name: ${name} Age: ${age}`
-
-console.log(fullname('Renu', 44));
+let rgbaExp = `rgba(${red},${green},${blue},${alpha} )`
+console.log(rgbaExp);
