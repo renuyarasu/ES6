@@ -1,13 +1,15 @@
 console.clear();
+// ES6 - Arrow Functions
 
-// rgba
-let red = 100;
-let green = 100;
-let blue = 100;
-let alpha = 0.8;
+/* function greet(name){
+    return `Welcome ${name}`
+}
+console.log(greet('Renu')); */
 
-/* let rgbaExp = 'rgba(' + red + ', ' + green + ', ' + green + ', ' + alpha + ')'
-console.log(rgbaExp); */
+/* const greet = (name, age) => {
+    return `Welcome ${name}, Age: ${age}`
+} */
 
-let rgbaExp = `rgba(${red},${green},${blue},${alpha} )`
-console.log(rgbaExp);
+const greet = (name, age) => `Welcome ${name}, Age: ${age}`
+
+console.log(greet('Renu', 33));
