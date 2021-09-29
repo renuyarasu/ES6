@@ -1,21 +1,14 @@
 console.clear();
-// ES6 - Spread  Operator
+// ES6 - Destructuring
 
-/* const num1 = [1,2,3,4,5];
-const num2 = [6,7,8,9];
-const num = num1.concat(num2)
-console.log(num);
- */
+// Destructuring - Arrays
+const name = 'Renuka Prasad Yarasu';
+const nameArr = name.split(' ');
+/* const fName = nameArr[0];
+const mName = nameArr[1];
+const lName = nameArr[2]; */
+console.log(nameArr);
+const [fName, lName, ,] = nameArr;
+console.log(fName);
+console.log(lName);
 
-const obj1 = {
-    fname: 'Renu',
-    lname: 'yarasu',
-}
-
-const obj2 = {
-    age: 33
-}
-
-const obj3 = {...obj1, ...obj2}
-
-console.log(obj3);
