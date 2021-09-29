@@ -1,15 +1,13 @@
 console.clear();
-// ES6 - Arrow Functions
+// ES6 - Rest Operator
 
-/* function greet(name){
-    return `Welcome ${name}`
+const total = (num1, num2,...arg) => {
+    let sum = 0;
+    for (let i = 0; i < arg.length; i++) {
+        sum += arg[i];
+    }
+    console.log(sum);
+    console.log(num1);
+    console.log(num2);
 }
-console.log(greet('Renu')); */
-
-/* const greet = (name, age) => {
-    return `Welcome ${name}, Age: ${age}`
-} */
-
-const greet = (name, age) => `Welcome ${name}, Age: ${age}`
-
-console.log(greet('Renu', 33));
+total(1, 2, 3, 4, 5, 6, 7, 8, 9)
