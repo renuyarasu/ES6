@@ -3,7 +3,7 @@ console.clear();
 
 let numbers = [-1, -2, -3, -4, -5, 1, 2, 3, 4, 5];
 
-let results = numbers.find((item) => {
+let results = numbers.findIndex((item) => {
     return (item % 2 === 0 && item >= 2)
 })
 
